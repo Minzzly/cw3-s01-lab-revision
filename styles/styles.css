@@ -1,0 +1,195 @@
+/*--------------------------------------------- SETTINGS -----------------------------------------------*/
+/*   font-family: 'Expletus Sans', cursive;
+     font-family: 'Rubik', sans-serif;   */
+
+/*--------------------------------------------- GENERIC -----------------------------------------------*/
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+h1,h2{
+    margin:0;
+}
+
+li{
+    list-style: none;
+    margin-left:20px;
+}
+/*--------------------------------------------- ELEMENTS -----------------------------------------------*/
+body{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin:0;
+
+}
+
+/* STYLER LES A*/
+
+a{
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: #2D2D2D;
+}
+
+/* STYLER LES HOVER DES A*/
+
+a:hover{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: underline;
+    color: #FFFCFC;
+}
+
+/* STYLER LES H1*/
+h1{
+    font-family: Expletus Sans, cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 125px;
+
+    color:#2D2D2D;
+}
+
+/* STYLER LES H2*/
+
+h2{
+    font-family: Expletus Sans, cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------- COMPONENTS -----------------------------------------------*/
+
+.conteneur{
+    max-width:1140px;
+    margin:0 auto;
+}
+
+/*  HEADER   */
+
+ul{
+    display:flex;
+    justify-content: flex-end;
+    margin:0;
+    padding:20px;
+
+}
+
+.header-principal{
+    background-color:#FF9800;
+}
+
+/*  HERO   */
+
+.hero h1{
+    padding:88px 0;
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color:#FFC107 ;
+    min-height:300px;
+}
+
+/* INFORMATION */
+
+.information{
+    padding:30px 0;
+}
+
+.information .conteneur{
+    display:flex;
+    justify-content: space-between;
+}
+
+.carte{
+    width:30%;
+    background-color: #f0f0f0;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.carte header{
+    padding:60px 0;
+    text-align: center;
+}
+
+.carte:nth-child(1) header{
+    background-color:#e34e26;
+}
+
+.carte:nth-child(2) header{
+    background-color:#0270bb;
+}
+
+.carte:nth-child(3) header{
+    background-color:#f8dc3d;
+}
+
+.conteneur .content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow:1;
+
+    padding:20px;
+}
+
+.conteneur .carte-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.carte-footer a{
+    color:#2d2d2d;
+    font-size: 14px;
+    background-color:#FFC107 ;
+    border:1px solid #E64A19 ;
+    border-radius:5px;
+
+    padding:10px;
+}
+
+.carte-footer a:hover{
+    color:white;
+    text-decoration: none;
+    background-color:#E64A19;
+}
+
+.carte-footer span{
+    color:#E64A19;
+}
+
+/* FOOTER */
+
+.footer-principal{
+    background-color:#E64A19;
+    padding:22px;
+}
+
+.conteneur h3{
+    color:white;
+    font-size:14px;
+    font-weight: lighter;
+}
+/*--------------------------------------------- UTILITIES -----------------------------------------------*/
