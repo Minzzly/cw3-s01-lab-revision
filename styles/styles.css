@@ -1,6 +1,13 @@
 /*--------------------------------------------- SETTINGS -----------------------------------------------*/
-/*   font-family: 'Expletus Sans', cursive;
-     font-family: 'Rubik', sans-serif;   */
+:root{
+    --font-primaire: Rubik, sans-serif;
+    --font-secondaire:'Expletus Sans', cursive;
+
+    --couleur-primaire:#FFC107;
+    --couleur-secondaire:#E64A19;
+    --couleur-white:#fff;
+    --couleur-gris:#2D2D2D;
+}
 
 /*--------------------------------------------- GENERIC -----------------------------------------------*/
 *, *::before, *::after{
@@ -17,9 +24,7 @@ li{
 }
 /*--------------------------------------------- ELEMENTS -----------------------------------------------*/
 body{
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-family:var(--font-primaire);
     font-size: 18px;
     line-height: 21px;
 
@@ -30,47 +35,38 @@ body{
 /* STYLER LES A*/
 
 a{
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     text-decoration: none;
 
-    color: #2D2D2D;
+    color: var(--couleur-gris);
 }
 
 /* STYLER LES HOVER DES A*/
 
 a:hover{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     text-decoration: underline;
-    color: #FFFCFC;
+    color: var(--couleur-white);
 }
 
 /* STYLER LES H1*/
 h1{
-    font-family: Expletus Sans, cursive;
+    font-family: var(--font-secondaire);
     font-style: normal;
     font-weight: 600;
     font-size: 96px;
     line-height: 125px;
 
-    color:#2D2D2D;
+    color:var(--couleur-gris);
 }
 
 /* STYLER LES H2*/
 
 h2{
-    font-family: Expletus Sans, cursive;
+    font-family: var(--font-secondaire);
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 83px;
-    color: #FFFFFF;
+    color: var(--couleur-white);
 }
 
 /*--------------------------------------------- COMPONENTS -----------------------------------------------*/
@@ -104,7 +100,7 @@ ul{
     display:flex;
     justify-content: center;
     text-align: center;
-    background-color:#FFC107 ;
+    background-color:var(--couleur-primaire);
     min-height:300px;
 }
 
@@ -130,18 +126,19 @@ ul{
 .carte header{
     padding:60px 0;
     text-align: center;
+    background:var(--couleur-primaire);
 }
 
 .carte:nth-child(1) header{
-    background-color:#e34e26;
+    --couleur-primaire:#FFC107;
 }
 
 .carte:nth-child(2) header{
-    background-color:#0270bb;
+    --couleur-primaire:#0270bb;
 }
 
 .carte:nth-child(3) header{
-    background-color:#f8dc3d;
+    --couleur-primaire:#f8dc3d;
 }
 
 .conteneur .content{
@@ -163,32 +160,32 @@ ul{
 .carte-footer a{
     color:#2d2d2d;
     font-size: 14px;
-    background-color:#FFC107 ;
-    border:1px solid #E64A19 ;
+    background-color:var(--couleur-primaire) ;
+    border:1px solid var(--couleur-secondaire) ;
     border-radius:5px;
 
     padding:10px;
 }
 
 .carte-footer a:hover{
-    color:white;
+    color:var(--couleur-white);
     text-decoration: none;
-    background-color:#E64A19;
+    background-color:var(--couleur-secondaire);
 }
 
 .carte-footer span{
-    color:#E64A19;
+    color:var(--couleur-secondaire);
 }
 
 /* FOOTER */
 
 .footer-principal{
-    background-color:#E64A19;
+    background-color:var(--couleur-secondaire);
     padding:22px;
 }
 
 .conteneur h3{
-    color:white;
+    color:var(--couleur-white);
     font-size:14px;
     font-weight: lighter;
 }
